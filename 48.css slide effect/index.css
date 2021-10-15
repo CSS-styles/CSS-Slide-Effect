@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #262626FF;
+}
+div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 100px;
+	width: 300px;
+	box-shadow: 1px 1px 60px black;
+	cursor: pointer;
+	overflow: hidden;
+}
+span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	transition: 1s;
+	height: 100%;
+	width: 100%;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: cursive;
+	color: white;
+}
+span:nth-child(1){
+	right: 95%;
+	background-color: dodgerblue;
+}
+span:nth-child(2){
+	left: 95%;
+	background-color: deeppink;
+}
+span:nth-child(1):hover{
+	right: 0;
+	z-index: 1;
+	box-shadow: 1px 1px 40px dodgerblue;
+}
+span:nth-child(2):hover{
+	left: 0;
+	z-index: 1;
+	box-shadow: 1px 1px 40px deeppink;
+}
